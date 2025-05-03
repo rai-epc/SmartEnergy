@@ -1,0 +1,206 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #F0F8FF; /* AliceBlue */
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #4682B4; /* SteelBlue */
+    color: #fff;
+    padding-top: 20px;
+    min-height: 80px;
+    border-bottom: #2E8B57 3px solid; /* SeaGreen */
+}
+
+header h1 {
+    float: left;
+    margin-top: 10px;
+    font-size: 1.8em;
+}
+
+header nav {
+    float: right;
+    margin-top: 15px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #B0E0E6; /* PowderBlue */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #E0FFFF; /* LightCyan */
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: #ccc 1px solid;
+    position: relative; /* Needed for potential absolute positioning of image if layout changes */
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #4682B4; /* SteelBlue */
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; /* Limit hero image height */
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #2E8B57; /* SeaGreen */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    border: none; /* Ensure buttons look like buttons */
+    cursor: pointer; /* Indicate interactivity */
+}
+
+.cta-button:hover {
+    background: #256d46; /* Darker SeaGreen */
+}
+
+/* Content Sections */
+.content-section {
+    padding: 50px 0;
+    overflow: auto; /* Clear floats */
+}
+
+.content-section h2 {
+    color: #4682B4; /* SteelBlue */
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.content-section p, .content-section ul {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.content-section ul {
+    list-style: disc;
+    margin-left: 30px;
+}
+
+.content-section.alt-bg {
+    background-color: #ffffff; /* White background for contrast */
+}
+
+.section-img {
+    max-width: 300px; /* Adjust size as needed */
+    height: auto;
+    float: right; /* Position images */
+    margin-left: 30px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Adjust image positioning for smaller screens or different layouts */
+@media (max-width: 768px) {
+    .section-img {
+        float: none;
+        display: block;
+        margin: 20px auto; /* Center image */
+    }
+     header h1 {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    header nav {
+        float: none;
+        text-align: center;
+    }
+     header li {
+        display: block;
+        padding: 5px 0;
+    }
+    .container {
+        width: 95%;
+    }
+}
+
+
+/* Contact Form */
+#contact-form {
+    margin-top: 20px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form textarea {
+    resize: vertical; /* Allow vertical resize */
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
